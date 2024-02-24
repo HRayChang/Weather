@@ -14,6 +14,7 @@
 		73150CDD2B89C79400A450F1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CDC2B89C79400A450F1 /* LocationManager.swift */; };
 		73150CE02B89CB5800A450F1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CDF2B89CB5800A450F1 /* Home.swift */; };
 		73150CE22B89CC9000A450F1 /* Welcome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CE12B89CC9000A450F1 /* Welcome.swift */; };
+		73150CE42B89E42A00A450F1 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CE32B89E42A00A450F1 /* WeatherManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		73150CDC2B89C79400A450F1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 		73150CDF2B89CB5800A450F1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 		73150CE12B89CC9000A450F1 /* Welcome.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Welcome.swift; sourceTree = "<group>"; };
+		73150CE32B89E42A00A450F1 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 			isa = PBXGroup;
 			children = (
 				73150CDC2B89C79400A450F1 /* LocationManager.swift */,
+				73150CE32B89E42A00A450F1 /* WeatherManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73150CE42B89E42A00A450F1 /* WeatherManager.swift in Sources */,
 				73150CD02B89C4E700A450F1 /* ContentView.swift in Sources */,
 				73150CE22B89CC9000A450F1 /* Welcome.swift in Sources */,
 				73150CCE2B89C4E700A450F1 /* WeatherApp.swift in Sources */,
