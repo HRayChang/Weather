@@ -10,8 +10,8 @@ import CoreLocation
 
 class WeatherManager {
     
-    func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws {
-        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)}&lon=\(longitude)&appid=a080cfd0f801f0bdd0ec487d219f36c9&units=metric") else { fatalError("Something Went Wrong...") }
+    func getCurrentWeather(latitude: CLLocationDegrees, longitude: CLLocationDegrees) async throws -> ResponseBody {
+        guard let url = URL(string: "https://api.openweathermap.org/data/2.5/weather?lat=\(latitude)&lon=\(longitude)&appid=a080cfd0f801f0bdd0ec487d219f36c9&units=metric") else { fatalError("Something Went Wrong...") }
         
         let urlRequest = URLRequest(url: url)
         
