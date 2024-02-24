@@ -12,6 +12,7 @@
 		73150CD22B89C4E900A450F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73150CD12B89C4E900A450F1 /* Assets.xcassets */; };
 		73150CD52B89C4E900A450F1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73150CD42B89C4E900A450F1 /* Preview Assets.xcassets */; };
 		73150CDD2B89C79400A450F1 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CDC2B89C79400A450F1 /* LocationManager.swift */; };
+		73150CE02B89CB5800A450F1 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73150CDF2B89CB5800A450F1 /* Home.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		73150CD12B89C4E900A450F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		73150CD42B89C4E900A450F1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		73150CDC2B89C79400A450F1 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		73150CDF2B89CB5800A450F1 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				73150CCD2B89C4E700A450F1 /* WeatherApp.swift */,
+				73150CDE2B89CAB600A450F1 /* Views */,
 				73150CCF2B89C4E700A450F1 /* ContentView.swift */,
 				73150CDB2B89C76300A450F1 /* Managers */,
 				73150CD12B89C4E900A450F1 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				73150CDC2B89C79400A450F1 /* LocationManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		73150CDE2B89CAB600A450F1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				73150CDF2B89CB5800A450F1 /* Home.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -150,6 +161,7 @@
 			files = (
 				73150CD02B89C4E700A450F1 /* ContentView.swift in Sources */,
 				73150CCE2B89C4E700A450F1 /* WeatherApp.swift in Sources */,
+				73150CE02B89CB5800A450F1 /* Home.swift in Sources */,
 				73150CDD2B89C79400A450F1 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
