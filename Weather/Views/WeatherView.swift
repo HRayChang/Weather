@@ -8,13 +8,23 @@
 import SwiftUI
 
 struct WeatherView: View {
-    var weather: ResponseBody
     
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            
+        }
+        .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
+        .background(LinearGradient(colors: [Color("light"), Color("dark")], startPoint: .topLeading, endPoint: .bottomTrailing))
     }
 }
 
 #Preview {
-    WeatherView(weather: previewWeather)
+    WeatherView()
+}
+
+// Create the Extension to transform duble into decimal
+extension Double {
+    func roundDouble() -> String {
+        return String(format: "%.0f", self)
+    }
 }
