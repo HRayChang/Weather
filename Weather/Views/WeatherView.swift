@@ -36,6 +36,13 @@ struct WeatherView: View {
                 Spacer()
             }
             .padding()
+            
+            // Add Cards to show humidity, wind etc.
+            Spacer()
+            CardView(icon: "", text: "", value: 12.0)
+            CardView(icon: "", text: "", value: 12.0)
+            CardView(icon: "", text: "", value: 12.0)
+            CardView(icon: "", text: "", value: 12.0)
         }
         .padding()
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
@@ -51,5 +58,21 @@ struct WeatherView: View {
 extension Double {
     func roundDouble() -> String {
         return String(format: "%.0f", self)
+    }
+}
+
+struct CardView: View {
+    var icon: String
+    var text: String
+    var value: Double
+    
+    var body: some View {
+        HStack {
+            Image(systemName: icon)
+        }
+        .frame(maxWidth: .infinity)
+        .frame(height: 70)
+        .background(.white.opacity(0.4))
+        .cornerRadius(12)
     }
 }
