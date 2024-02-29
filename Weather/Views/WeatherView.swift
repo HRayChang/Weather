@@ -8,10 +8,11 @@
 import SwiftUI
 
 struct WeatherView: View {
+    var weather: ResponseBody
     
     var body: some View {
         VStack(alignment: .leading, spacing: 10) {
-            Text("Stockholm,\nSweden")
+            Text("\(weather.name)")
                 .font(.system(size: 36, weight: .semibold))
             
             Text("Tue, Jan 30")
@@ -51,7 +52,7 @@ struct WeatherView: View {
 }
 
 #Preview {
-    WeatherView()
+    WeatherView(weather: previewWeather)
 }
 
 // Create the Extension to transform duble into decimal
@@ -67,13 +68,22 @@ struct CardView: View {
     var value: Double
     
     var body: some View {
-        HStack {
+        HStack(spacing: 20) {
             Image(systemName: icon)
                 .imageScale(.large)
                 .frame(width: 60, height: 60)
                 .background(.white.opacity(0.7))
                 .cornerRadius(12)
+            
+              Text(text)
+                .font(.system(size: 15))
+            
+            Spacer()
+            
+            Text("\(value.roundDouble())")
+                .font(.headline)
         }
+        .padding(.horizontal)
         .frame(maxWidth: .infinity)
         .frame(height: 70)
         .background(.white.opacity(0.3))
