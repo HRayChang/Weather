@@ -19,7 +19,7 @@ struct WeatherView: View {
                 .opacity(0.5)
             
             HStack {
-                Image("rain")
+                Image(systemName: "cloud.rain.fill")
                     .resizable()
                     .scaledToFit()
                     .frame(width: 200)
@@ -39,10 +39,10 @@ struct WeatherView: View {
             
             // Add Cards to show humidity, wind etc.
             Spacer()
-            CardView(icon: "", text: "", value: 12.0)
-            CardView(icon: "", text: "", value: 12.0)
-            CardView(icon: "", text: "", value: 12.0)
-            CardView(icon: "", text: "", value: 12.0)
+            CardView(icon: "thermometer", text: "Min temp", value: 12.0)
+            CardView(icon: "thermometer", text: "Max temp", value: 12.0)
+            CardView(icon: "wind", text: "Wind Speed", value: 12.0)
+            CardView(icon: "humidity", text: "Humidity", value: 12.0)
         }
         .padding()
         .frame(maxWidth: /*@START_MENU_TOKEN@*/.infinity/*@END_MENU_TOKEN@*/, maxHeight: .infinity)
@@ -69,10 +69,14 @@ struct CardView: View {
     var body: some View {
         HStack {
             Image(systemName: icon)
+                .imageScale(.large)
+                .frame(width: 60, height: 60)
+                .background(.white.opacity(0.7))
+                .cornerRadius(12)
         }
         .frame(maxWidth: .infinity)
         .frame(height: 70)
-        .background(.white.opacity(0.4))
+        .background(.white.opacity(0.3))
         .cornerRadius(12)
     }
 }
